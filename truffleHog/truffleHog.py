@@ -164,7 +164,7 @@ def print_results(printJson, issue):
     if printJson:
         print(json.dumps(issue, sort_keys=True))
     else:
-        print("~~~~~~~~~~~~~~~~~~~~~")
+        print("~~~~~~~~~~~~~~~~~~~~~~")
         reason = "{}Reason: {}{}".format(bcolors.OKGREEN, reason, bcolors.ENDC)
         print(reason)
         dateStr = "{}Date: {}{}".format(bcolors.OKGREEN, commit_time, bcolors.ENDC)
